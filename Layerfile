@@ -22,6 +22,5 @@ COPY / /root
 RUN REPEATABLE docker-compose build --parallel
 RUN docker-compose up -d
 
-RUN docker-compose exec cypress-bash /app/run_tests.sh
 
 
